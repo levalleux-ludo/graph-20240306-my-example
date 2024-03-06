@@ -1,0 +1,21 @@
+{
+  "name": "20240306-my-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "codegen": "graph codegen",
+    "deploy:testing": "npm run manifest:testing && graph deploy --node https://api.thegraph.com/deploy/ --product hosted-service --ipfs https://api.thegraph.com/ipfs/ levalleux-ludo/bosontesting"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.68.5",
+    "@graphprotocol/graph-ts": "0.33.0"
+  },
+  "devDependencies": {
+    "assemblyscript": "0.19.23",
+    "ts-node": "^10.7.0"
+  }
+}
