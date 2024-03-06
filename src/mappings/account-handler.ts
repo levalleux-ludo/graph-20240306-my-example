@@ -24,7 +24,7 @@ export function handleSellerCreatedEvent(event: SellerCreated): void {
     seller = new Seller(sellerId);
   }
 
-  seller.metadataUri = sellerFromEvent.metadataUri || "NA";
+  seller.metadataUri = sellerFromEvent.metadataUri || "N/A";
   seller.metadata = getSellerMetadataEntityId(seller.id.toString());
   seller.save();
 
